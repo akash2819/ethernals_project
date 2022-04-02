@@ -167,7 +167,7 @@ const App = () => {
   if (!address) {
     return (
       <div className="landing">
-        <h1>Welcome to Du student Union Dao 🥱</h1>
+        <h1>Welcome to Du student Union Dao</h1>
         <button onClick={() => connectWallet("injected")} className="btn-hero">
           Connect your wallet
         </button>
