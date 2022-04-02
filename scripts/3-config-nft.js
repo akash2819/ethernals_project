@@ -15,8 +15,8 @@ const bundleDrop = sdk.getBundleDropModule(process.env.BUNDLE_DROP_ADDRESS);
   try {
     await bundleDrop.createBatch([
       {
-        name: "Boring NFT",
-        description: "A proof of being bored",
+        name: "Batch NFT",
+        description: "This nft is youe virtual id ",
         image: readFileSync("scripts/assets/boringdao-nft.gif"),
       },
     ]);

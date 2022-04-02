@@ -13,8 +13,8 @@ const app = sdk.getAppModule(process.env.ALCHEMY_APP_ADDRESS);
 (async () => {
   try {
     const tokenModule = await app.deployTokenModule({
-      name: "BoringDAO Governance Token",
-      symbol: "BOREDOM",
+      name: "Du Student Union DAO Governance Token",
+      symbol: "Power",
     });
     console.log(
       "✅ Successfully deployed token module, address:",

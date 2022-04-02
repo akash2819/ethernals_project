@@ -187,7 +187,7 @@ const App = () => {
               <thead>
                 <tr>
                   <th>Address</th>
-                  <th>$BOREDOM Amount</th>
+                  <th>$STUDENT Amount</th>
                 </tr>
               </thead>
               <tbody>

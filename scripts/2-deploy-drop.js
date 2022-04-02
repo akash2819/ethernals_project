@@ -6,7 +6,7 @@ import sdk from "./1-initialize-sdk.js";
 
 dotenv.config();
 
-if (!process.env.ALCHEMY_APP_ADDRESS || process.env.ALCHEMY_APP_ADDRESS == "") {
+if (!process.env.ALCHEMY_APP_ADDRESS || process.env.ALCHEMY_APP_ADDRESS ) {
   throw new Error("🛑 App address not found.");
 }
 
@@ -15,8 +15,8 @@ const app = sdk.getAppModule(process.env.ALCHEMY_APP_ADDRESS);
 (async () => {
   try {
     const bundleDropModule = await app.deployBundleDropModule({
-      name: "BoringDAO Membership",
-      description: "A boredom (anti-)fan club",
+      name: "Du Student Union DAO Membership",
+      description: "You are now part of student council",
       image: readFileSync("scripts/assets/boringdao-nft.gif"),
       primarySaleRecipientAddress: ethers.constants.AddressZero,
     });
